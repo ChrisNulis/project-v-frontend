@@ -17,6 +17,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy": "https://nulis-final-project-one.herokuapp.com/",
+  
   "eslintConfig": {
     "extends": [
       "react-app",

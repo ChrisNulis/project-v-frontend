@@ -59,6 +59,22 @@ class App extends React.Component {
 
   }
 
+  deleteVenues = (event) => {
+    axios.delete('https://nulis-final-project-one.herokuapp.com' + event.target.value).then((response) => {
+      this.getVenues()
+    })
+  }
+
+  updateVenues = (event) => {
+    event.preventDefault()
+    const id = event.target.id
+    axios
+    .put('https://nulis-final-project-one.herokuapp.com' + id, this.state)
+    .then((response) => {
+      this.getVenues()
+    })
+  }
+
   componentDidMount = () => {
     this.getVenues()
   }
@@ -66,22 +82,28 @@ class App extends React.Component {
 
   render() {
     return (
-      <Router>
         <div className="">
           <Nav />
-          <Banner />
-          <Content />
-          <Switch>
-            <Route path="/" exact component = {Home} />
-            <Route path="/Indiv" component={Indiv} />
-            <Route path="/LogIn" component={LogIn} />
-            <Route path="/SignUp" component={SignUp} />
-          </Switch>
-          <Map />
-          <Weather />
+          <Banner
+            addVenues={this.addVenues}
+            id="add"/>
+          <div className="smaller-width">
+            <div id="venues-container">
+              {this.state.venues.map((venue) => {
+                return(
+                  <Content venue={venue}
+                    updateVenues={this.updateVenues}
+                    deleteVenues={this.deleteVenues}
+                    handleChange={this.handleChange}
+                    />
+                )
+              })}
+            </div>
+          <Map id="map"/>
+          <Weather id="" />
+          </div>
           <Footer />
         </div>
-      </Router>
     )
   }
 }

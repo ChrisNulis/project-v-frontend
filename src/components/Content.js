@@ -28,6 +28,9 @@ class Content extends React.Component {
                       <label htmlFor="location">Location</label><br />
                       <input type="text" id="location" onChange={this.props.handleChange} />
                       <br />
+                      <label htmlFor="description">Description</label><br />
+                      <input type="text" id="description" onChange={this.props.handleChange} />
+                      <br />
                       <input type="submit" value="Update Venue" />
                     </form>
                     <button value={this.props.venue._id} onClick={this.props.deleteVenues} id="del-btn">

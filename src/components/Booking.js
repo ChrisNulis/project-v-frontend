@@ -7,7 +7,7 @@ class Booking extends React.Component {
   render = () => {
     return (
       <div>
-        <h1>Booking</h1>
+        <h1>Under Construction!</h1>
       </div>
     )
   }

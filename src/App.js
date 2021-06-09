@@ -3,7 +3,6 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import axios from 'axios'
 import AddForm from './components/AddForm'
 import Nav from './components/Nav'
-import Banner from './components/Banner'
 import Booking from './components/Booking'
 import Content from './components/Content'
 import Footer from './components/Footer'
@@ -83,13 +82,26 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <div className="App">
+        <div className="">
           <Nav />
-          <Banner
+          <Switch>
+            <Route path="/" exact component ={Home}>
+              <Home />
+              <Footer />
+            </Route>
+            <Route path="/Booking">
+            <Booking />
+            </Route>
+            <Route path="/SignUp">
+            <SignUp />
+            </Route>
+            <Route path="/LogIn">
+            <LogIn />
+            </Route>
+            <Route path="/Content">
+            <AddForm
             addVenues={this.addVenues}
             id="add"/>
-          <div className="smaller-width">
-            <div id="venues-container">
               {this.state.venues.map((venue) => {
                 return(
                   <Content venue={venue}
@@ -99,17 +111,11 @@ class App extends React.Component {
                     />
                 )
               })}
-            </div>
-            <Switch>
-              <Route path="/LogIn" component={LogIn} />
-              <Route path="/SignUp" component={SignUp} />
-            </Switch>
-          <Map id="map"/>
-          <Weather id="Weather" />
-          </div>
-          <Footer />
+            </Route>
+          </Switch>
         </div>
-        </Router>
+      </Router>
+
     )
   }
 }

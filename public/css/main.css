@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background: magenta;
 }
 
 nav {
@@ -18,4 +19,44 @@ nav {
   align-items: center;
   list-style: none;
 
+}
+#home {
+  background: teal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#home > h1{
+  font-family: fantasy;
+  font-size: 4em;
+}
+
+#home > h3 {
+  font-family: cursive;
+}
+
+.app-about {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2em;
+  background-color: cyan;
+  line-height: 27px;
+  border-radius: 10px;
+  max-width: 950px;
+
+}
+
+.app-about > h2 {
+  font-family: sans-serif;
+}
+.app-about > p {
+  text-align: center;
+}
+.footer-container {
+  background: pink;
 }

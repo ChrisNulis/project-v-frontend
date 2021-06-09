@@ -3,12 +3,15 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 
 
-const SignUp = (props) => {
-  return (
-    <div>
-      <h1>SignUp</h1>
-    </div>
-  )
-}
+class SignUp extends React.Component {
+    render() {
+      return (
+        <nav>
+          <h1>SignUp</h1>
 
-export default SignUp
+        </nav>
+      )
+    }
+  }
+
+  export default SignUp

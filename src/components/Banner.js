@@ -27,7 +27,7 @@ class Banner extends React.Component {
         const addForm = document.querySelector('.addForm')
         addForm.classList.toggle('visible')
     }
-    
+
       render(){
           return (
               <div className="heroarea-container" id="heroarea-container">
@@ -44,10 +44,10 @@ class Banner extends React.Component {
                         onChange={this.handleChange}
                     />
                     <br />
-                    <label htmlFor="image">Image:</label><br />
+                    <label htmlFor="img">Image:</label><br />
                     <input
                         type="text"
-                        id="image"
+                        id="img"
                         value={this.state.img}
                         onChange={this.handleChange}
                     />

@@ -15,7 +15,7 @@ class Content extends React.Component {
 
                   <details>
                     <summary>Edit Venue</summary>
-                    <form id={this.props.venue.id} onSubmit={this.props.updateVenues}>
+                    <form id={this.props.venue._id} onSubmit={this.props.updateVenues}>
                       <label htmlFor="name">Name</label><br />
                       <input type="text" id="name" onChange={this.props.handleChange} />
                       <br />
@@ -30,7 +30,7 @@ class Content extends React.Component {
                       <br />
                       <input type="submit" value="Update Venue" />
                     </form>
-                    <button value={this.props.venue.id} onClick={this.props.deleteVenues} id="del-btn">
+                    <button value={this.props.venue._id} onClick={this.props.deleteVenues} id="del-btn">
                     Remove Venue
                     </button>
                   </details>

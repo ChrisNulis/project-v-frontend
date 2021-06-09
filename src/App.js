@@ -60,7 +60,7 @@ class App extends React.Component {
   }
 
   deleteVenues = (event) => {
-    axios.delete('https://nulis-final-project-one.herokuapp.com' + event.target.value).then((response) => {
+    axios.delete('https://nulis-final-project-one.herokuapp.com/' + event.target.value).then((response) => {
       this.getVenues()
     })
   }
@@ -69,7 +69,7 @@ class App extends React.Component {
     event.preventDefault()
     const id = event.target.id
     axios
-    .put('https://nulis-final-project-one.herokuapp.com' + id, this.state)
+    .put('https://nulis-final-project-one.herokuapp.com/' + id, this.state)
     .then((response) => {
       this.getVenues()
     })
@@ -100,7 +100,7 @@ class App extends React.Component {
               })}
             </div>
           <Map id="map"/>
-          <Weather id="" />
+          <Weather id="Weather" />
           </div>
           <Footer />
         </div>

@@ -3,12 +3,15 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 
 
-const LogIn = (props) => {
-  return (
-    <div>
-      <h1>LogIn</h1>
-    </div>
-  )
-}
+class LogIn extends React.Component {
+    render() {
+      return (
+        <nav>
+          <h1>LogIn</h1>
 
-export default LogIn
+        </nav>
+      )
+    }
+  }
+
+  export default LogIn

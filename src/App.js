@@ -82,7 +82,8 @@ class App extends React.Component {
 
   render() {
     return (
-        <div className="">
+      <Router>
+        <div className="App">
           <Nav />
           <Banner
             addVenues={this.addVenues}
@@ -99,11 +100,16 @@ class App extends React.Component {
                 )
               })}
             </div>
+            <Switch>
+              <Route path="/LogIn" component={LogIn} />
+              <Route path="/SignUp" component={SignUp} />
+            </Switch>
           <Map id="map"/>
           <Weather id="Weather" />
           </div>
           <Footer />
         </div>
+        </Router>
     )
   }
 }

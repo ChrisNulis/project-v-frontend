@@ -8,6 +8,14 @@ class Nav extends React.Component {
       return (
         <nav>
           <h1>Nav</h1>
+          <ul className="nav-Links">
+            <Link to="/LogIn">
+              <li>LogIn</li>
+            </Link>
+            <Link to="SignUp">
+              <li>SignUp</li>
+            </Link>
+          </ul>
 
         </nav>
       )

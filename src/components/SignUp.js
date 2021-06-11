@@ -24,26 +24,26 @@ class SignUp extends React.Component {
     render() {
       return (
         <div id='signup'>
-        <form action="/SignUp" onSubmit={this.sendUserInfo}>
-        <h3> Sign Up </h3>
-        <label htmlFor="username">User Name:</label>
-        <br />
-        <input
-        type="text"
-        id="username"
-        value={this.state.username}
-        onChange={this.handleSignup}/>
-        <br />
-        <label htmlFor="username">Password:</label>
-        <br />
-        <input
-        type="text"
-        id="password"
-        value={this.state.username}
-        onChange={this.handleSignup}/>
-        <br />
-        <input type="submit" value="Sign Up" />
-        </form>
+          <form action="/SignUp" onSubmit={this.sendUserInfo}>
+          <h3> Sign Up </h3>
+          <label htmlFor="username">User Name:</label>
+          <br />
+          <input
+          type="text"
+          id="username"
+          value={this.state.username}
+          onChange={this.handleSignup}/>
+          <br />
+          <label htmlFor="username">Password:</label>
+          <br />
+          <input
+          type="text"
+          id="password"
+          value={this.state.username}
+          onChange={this.handleSignup}/>
+          <br />
+          <input type="submit" value="Sign Up" />
+          </form>
         </div>
       )
     }

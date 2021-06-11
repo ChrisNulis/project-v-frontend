@@ -7,11 +7,11 @@ class Home extends React.Component {
   render = () => {
     return (
       <div id="home">
-        <h1>Wenue</h1>
-        <h3>Event Bookings</h3>
+        <h1>Wenues</h1>
+        <h3><b>Event Bookings</b></h3>
         <div className="app-about">
           <h2><b>Welcome</b></h2>
-          <p>Put why you want to enter this darn app</p>
+          <p>For all your venue booking and listing needs</p>
         </div>
       </div>
     )

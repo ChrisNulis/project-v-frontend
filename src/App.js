@@ -82,12 +82,11 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <div className="">
+        <div className="main-container">
           <Nav />
           <Switch>
             <Route path="/" exact component ={Home}>
               <Home />
-              <Footer />
             </Route>
             <Route path="/Booking">
             <Booking />
@@ -102,6 +101,8 @@ class App extends React.Component {
             <AddForm
             addVenues={this.addVenues}
             id="add"/>
+            <div className="drowpdowns">
+              <div id="venue-container">
               {this.state.venues.map((venue) => {
                 return(
                   <Content venue={venue}
@@ -111,8 +112,12 @@ class App extends React.Component {
                     />
                 )
               })}
+              </div>
+            </div>
+
             </Route>
           </Switch>
+          <Footer />
         </div>
       </Router>
 

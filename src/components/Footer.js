@@ -7,20 +7,14 @@ class Footer extends React.Component {
     render() {
         return (
             <div className="footer-container">
-                <h4>MERN</h4>
-                <p>project by:</p>
-                <ul>
-                    <li>
-                        <p>Christopher Nugroho</p>
-                        <a href="https://www.linkedin.com/in/christophernugroho/" target>
-                            <i className="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/ChrisNulis" >
-                            <i className="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
+                  <div className ="text-center">
+                      <nav id="footerLink">
+                            <a href="https://www.linkedin.com/in/christopher-nugroho-b2814050/"><img style={{width: '50px', height: '50px'}} src="https://i.imgur.com/OA6SsbIs.png" alt="Linkedin"/></a>
+                            <a href="https://github.com/ChrisNulis"><img style={{width: '50px', height: '50px'}} src="https://i.imgur.com/LA1DKG4t.png" alt="GitHub"/></a>
+                      </nav>
+                      <p>Christopher Nugroho</p>
+                      <h6>M.E.R.N</h6>
+                  </div>
             </div>
         )
     }

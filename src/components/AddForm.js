@@ -30,10 +30,10 @@ class AddForm extends React.Component {
 
       render(){
           return (
-              <div className="heroarea-container" id="heroarea-container">
-                  <div className="welcome-text">
+              <div className="form-container" id="form-container">
+                  <div className="main-text-at-add-form">
                       <h1>Wenues</h1>
-                      <button onClick={this.showForm}>Add Venues</button>
+                      <button class="button is-primary" onClick={this.showForm}>Add Venues</button>
                   </div>
                   <form className="addForm" onSubmit={this.handleSubmit}>
                     <label htmlFor="name">Name:</label><br />
@@ -76,7 +76,7 @@ class AddForm extends React.Component {
                         onChange={this.handleChange}
                     />
                     <br />
-                    <input
+                    <input className="btn btn-success mb-5"
                       type="submit"
                       value="Add New Location"
                       onClick={this.showForm}/>

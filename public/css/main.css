@@ -1,15 +1,15 @@
 .App {
   text-align: center;
-  background: magenta;
+  background: yellow;
 }
-
+/* NAV */
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 10vh;
-  background: orange;
-  color: black;
+  height: 15vh;
+  background: black;
+  color: white;
 }
 
 .nav-Links {
@@ -20,43 +20,66 @@ nav {
   list-style: none;
 
 }
+
+/* HOME */
 #home {
-  background: teal;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#home > h1{
+#home  h1{
   font-family: fantasy;
   font-size: 4em;
 }
 
-#home > h3 {
+#home  h3 {
   font-family: cursive;
 }
 
+img {
+  width: 600px;
+  display: block;
+}
 .app-about {
   margin-top: 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1.2em;
+  padding: 1em;
   background-color: cyan;
   line-height: 27px;
   border-radius: 10px;
-  max-width: 950px;
 
 }
 
-.app-about > h2 {
+.app-about  h2 {
   font-family: sans-serif;
 }
-.app-about > p {
+.app-about  p {
   text-align: center;
 }
+/* Content */
+
+#venue-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.venue-card img {
+    width: 50vmin;
+    height: 50vmin;
+    min-width: 200px;
+    min-height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+/* Footer */
 .footer-container {
-  background: pink;
+  background: black;
+  text-align: center;
+  color: white;
+  margin-bottom: 0;
 }

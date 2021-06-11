@@ -78,6 +78,8 @@ img {
 }
 /* Footer */
 .footer-container {
+  display: flex;
+  justify-content: center;
   background: black;
   text-align: center;
   color: white;

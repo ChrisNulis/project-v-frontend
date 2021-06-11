@@ -117,6 +117,16 @@ class App extends React.Component {
 
             </Route>
           </Switch>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
           <Footer />
         </div>
       </Router>

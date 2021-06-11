@@ -6,8 +6,9 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 class Booking extends React.Component {
   render = () => {
     return (
-      <div>
-        <h1>Under Construction!</h1>
+      <div className = "booking">
+        <h1><b>Under Construction!</b></h1>
+        <h1><b>YU GO NAO!</b></h1>
       </div>
     )
   }

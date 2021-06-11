@@ -30,8 +30,9 @@ nav {
 }
 
 #home  h1{
+  text-decoration: underline;
   font-family: fantasy;
-  font-size: 4em;
+  font-size: 9em;
 }
 
 #home  h3 {
@@ -75,6 +76,14 @@ img {
     min-height: 200px;
     object-fit: contain;
     border-radius: 10px;
+}
+
+/* BOOKING */
+
+.booking {
+  font-family: 'Sansita-Swashed';
+  text-align: center;
+
 }
 /* Footer */
 .footer-container {

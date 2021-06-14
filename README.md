@@ -1,3 +1,23 @@
+# Wenues
+
+This is an ongoing project where user(logged venue owner) can list, update, delete their properties while user(logged visitor) can view and book a listed venue.
+
+Currently working: CRUD venue function.
+
+Currently under construction: booking & login/signup function.
+
+Project site:
+
+https://wenues.herokuapp.com/
+
+Project spec:
+Mongo Express React Node (M.E.R.N) Stack.
+Bootstrap.
+Bulma.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import { Form, Button, Card } from 'react-bootstrap'
 
 
 
@@ -8,43 +9,36 @@ class SignUp extends React.Component {
     username:'',
     password:''
   }
-
-  handleSignup = (event) => {
-    this.setState(
-      {
-        [event.target.name]: event.target.value
-      }
-    )
-  }
-
-  sendUserInfo = (event) => {
-    this.props.signUp(event, this.state)
-  }
-
     render() {
       return (
-        <div id='signup'>
-          <form action="/SignUp" onSubmit={this.sendUserInfo}>
-          <h3> Sign Up </h3>
-          <label htmlFor="username">User Name:</label>
-          <br />
-          <input
-          type="text"
-          id="username"
-          value={this.state.username}
-          onChange={this.handleSignup}/>
-          <br />
-          <label htmlFor="username">Password:</label>
-          <br />
-          <input
-          type="text"
-          id="password"
-          value={this.state.username}
-          onChange={this.handleSignup}/>
-          <br />
-          <input type="submit" value="Sign Up" />
+        <>
+        <Card>
+          <Card.Body>
+            <h1 className="text-center mb-4">Sign Up</h1>
+            <h5 className ="text-center">UNDER CONSTRUCTION</h5>
+          </Card.Body>
+        </Card>
+        <div className='w-100 text-center mt-2'>
+          <form action="/SignUp">
+              <label htmlFor="username">User Name:</label>
+              <br />
+              <input
+                type="text"
+                id="username"/>
+              <br />
+              <label htmlFor="password">Password:</label>
+              <br />
+              <input
+                type="text"
+                id="password"/>
+                <br />
+              <input type="submit" value="Sign Up" />
           </form>
         </div>
+        <div className="w-100 text-center mt-2">
+        Already have account? Log in
+        </div>
+        </>
       )
     }
   }

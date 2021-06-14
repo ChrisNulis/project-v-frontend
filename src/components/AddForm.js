@@ -31,10 +31,11 @@ class AddForm extends React.Component {
       render(){
           return (
               <div className="form-container" id="form-container">
-                  <div className="main-text-at-add-form">
-                      <h1>Wenues</h1>
-                      <button class="button is-primary" onClick={this.showForm}>Add Venues</button>
+                  <div className="add-form">
+                      <h1>Venues</h1>
                   </div>
+                  <details>
+                  <summary>Add New Venue</summary>
                   <form className="addForm" onSubmit={this.handleSubmit}>
                     <label htmlFor="name">Name:</label><br />
                     <input
@@ -76,11 +77,12 @@ class AddForm extends React.Component {
                         onChange={this.handleChange}
                     />
                     <br />
-                    <input className="btn btn-success mb-5"
+                    <input className="add-button"
                       type="submit"
-                      value="Add New Location"
+                      value="Add New Venue"
                       onClick={this.showForm}/>
                  </form>
+                </details>
               </div>
           )
       }

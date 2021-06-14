@@ -8,7 +8,6 @@ class Booking extends React.Component {
     return (
       <div className = "booking">
         <h1><b>Under Construction!</b></h1>
-        <h1><b>YU GO NAO!</b></h1>
       </div>
     )
   }

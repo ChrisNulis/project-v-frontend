@@ -1,7 +1,23 @@
+:root {
+    --lightgray: #F6F3F0;
+    --mistblue: #CADBD7;
+    --mint: #9AB6B1;
+    --brick: #AF4B43;
+    --darkgray: #333941;
+    --sunrise: #E6B689;
+    --mud: #816E7C;
+    --clay: #8E5951;
+    --coffee: #98826E;
+    --whitesmoke: #F5F5F5;
+    --creme: #DBCFC5;
+
+}
+
 .App {
   text-align: center;
   background: yellow;
 }
+
 /* NAV */
 nav {
   display: flex;
@@ -13,6 +29,7 @@ nav {
 }
 
 .nav-Links {
+  color: var(--sunrise);
   width: 40%;
   display: flex;
   justify-content: space-around;
@@ -23,6 +40,9 @@ nav {
 
 /* HOME */
 #home {
+  background: url("https://i.imgur.com/2aJlEBs.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,12 +51,18 @@ nav {
 
 #home  h1{
   text-decoration: underline;
+  color: var(--sunrise);
   font-family: fantasy;
   font-size: 9em;
+  text-shadow: 1px 1px 2px black;
+  letter-spacing: 1px;
 }
 
 #home  h3 {
+  color: var(--sunrise);
   font-family: cursive;
+  text-shadow: 1px 1px 2px black;
+  letter-spacing: 1px;
 }
 
 img {
@@ -44,44 +70,134 @@ img {
   display: block;
 }
 .app-about {
+  font-family: 'Sansita-Swashed'
   margin-top: 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1em;
-  background-color: cyan;
   line-height: 27px;
+  border: 3px solid var(--sunrise);
   border-radius: 10px;
+  text-shadow: 1px 1px 2px black;
+  letter-spacing: 1px;
 
 }
 
 .app-about  h2 {
+  color: var(--sunrise);
   font-family: sans-serif;
 }
 .app-about  p {
+  color: var(--sunrise);
   text-align: center;
 }
 /* Content */
+
+details > summary {
+  color: var(--brick);
+  text-align: center;
+  font-family: 'Sansita-Swashed';
+  padding: 2px 6px;
+  width: 10em;
+  background-color: var(--creme);
+  border-radius: 10px;
+  box-shadow: 3px 3px 4px black;
+  cursor: pointer;
+}
+
+details > summary:hover {
+  color: var(--mud);
+}
+
+details > summary input[type="text"] {
+  margin: 5px auto;
+}
+
+#venue-container summary {
+    color: var(--brick);
+    transition: .3s;
+    margin-bottom: 5px;
+}
+
+#venue-container summary:hover {
+    color: var(--sunrise);
+}
+
+#venue-container input[type="text"] {
+    margin: 5px auto;
+}
 
 #venue-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
 }
+
+#venue-container article {
+    min-width: 300px;
+    border: 3px solid var(--sunrise);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+#venue-container p, #venue-container ul {
+    align-self: flex-start;
+}
+
+#venue-container span {
+    font-weight: bold;
+}
+
+.update-button, .delete-button, .add-button {
+  color: var(--brick);
+  background-color: var(--whitesmoke);
+}
+
+.venue-card {
+  border: 3px solid black;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+
 .venue-card img {
-    width: 50vmin;
-    height: 50vmin;
-    min-width: 200px;
-    min-height: 200px;
-    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
     border-radius: 10px;
 }
+
+#venue-name {
+  color: var(--sunrise);
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+  letter-spacing: 1px;
+}
+
+.add-form h1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-decoration: underline;
+    color: var(--sunrise);
+    font-family: fantasy;
+    font-size: 5em;
+    text-shadow: 1px 1px 2px black;
+    letter-spacing: 1px;
+}
+
+
 
 /* BOOKING */
 
 .booking {
-  font-family: 'Sansita-Swashed';
+  font-family: fantasy;
   text-align: center;
 
 }

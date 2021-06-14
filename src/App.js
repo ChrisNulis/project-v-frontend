@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import { Form, Button, Card } from 'react-bootstrap'
 import axios from 'axios'
 import AddForm from './components/AddForm'
 import Nav from './components/Nav'
@@ -117,16 +118,7 @@ class App extends React.Component {
 
             </Route>
           </Switch>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
+
           <Footer />
         </div>
       </Router>

@@ -10,7 +10,7 @@ class Content extends React.Component {
                 <section className="venue-card">
                   <img src={this.props.venue.img} alt={this.props.venue.name}/>
                   <div className="intro-text">
-                  <h3 id="venue-name">{this.props.venue.name}</h3>
+                  <h3 id="venue-name"><b>{this.props.venue.name}</b></h3>
                   </div>
                   <p><span>Date:</span> {this.props.venue.date}</p>
                   <p><span>Location:</span> {this.props.venue.location}</p>
@@ -34,9 +34,9 @@ class Content extends React.Component {
                       <label htmlFor="description">Description</label><br />
                       <input type="text" id="description" onChange={this.props.handleChange} />
                       <br />
-                      <input className="btn btn-primary mb-1" type="submit" value="Update Venue" />
+                      <input className="update-button" type="submit" value="Update Venue" />
                     </form>
-                    <button value={this.props.venue._id} onClick={this.props.deleteVenues} className="btn btn-danger">
+                    <button value={this.props.venue._id} onClick={this.props.deleteVenues} className="delete-button">
                     Remove Venue
                     </button>
                   </details>
